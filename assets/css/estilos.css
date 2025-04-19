@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+
+
+/*reset de css a html resetea los tamaños del navegador por defecto*/
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+/*va en todos los archivos css desde ahora*/
+
+html body { height: 100%;}
+body {font-family: 'National Park', Times
+    ;
+    font-size: 1.2em;
+    min-height: 100%;
+} 
+ .contenedor {
+    text-align: center;
+    padding: 50px;
+    
+ }
+
