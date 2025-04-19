@@ -16,9 +16,49 @@ body {font-family: 'National Park', Times;
  .contenedor *{
     text-align: center;
     padding: 50px;
-    box-shadow: -1px 10px 50px rgb(177, 137, 137) ;
+    box-shadow: -1px 10px 50px rgb(177, 137, 137, 0.75) ;
     border-radius: 50px, ;
     border-color: blue;
     border: 10px;
  }
 
+ .header {
+    grid-area: header; 
+    background-color: rgb(226, 101, 43) ;
+ }
+ .nav {
+    grid-area: nav; 
+    background-color: rgb(188, 201, 67) ;
+ }
+ .aside {
+    grid-area: aside; 
+    background-color: rgb(43, 226, 98) ;
+ }
+ .article {
+    grid-area: article; 
+    background-color: rgb(43, 226, 171) ;
+ }
+ .footer {
+    grid-area: footer; 
+    background-color: rgb(43, 159, 226) ;
+ }
+ .contenedor {
+    display: grid ;
+    gap: 10px;
+    grid-template: 
+    "header" 100px 
+    "nav" 100px 
+    "article" auto 
+    "aside" 100px 
+    "footer"100px;
+ }
+ @media (min-width: 600px){
+    .contenedor {
+       grid-template:
+       "header header" 100px
+       "nav nav" 100px
+       "article article" auto 
+       "aside aside" 100px
+       "footer footer" 100px;
+     }
+ }
